@@ -1,0 +1,202 @@
+html,body {
+  height: 100%;
+  background-color: #2F2FA2;
+  min-height: 100%;
+  overflow-y: hidden; /* we dont want our site to be scrollable! */
+  overflow-x: hidden;
+}
+
+.ht_app {
+  height: 100%;
+}
+  
+/* Hire me Design */
+
+.hireme-wrapper {
+  display: inline-flex;
+  margin: auto; 
+  text-align: center;
+  height: 58px;
+  margin-right: 84px;
+}
+
+.hireme-wrapper > div > h4 {
+  font-size: 16px;
+  font-family: seguisb;
+  color: white;
+  position: relative;
+  right: 50px;
+  width: 100%;
+}
+
+#hireme-btn:hover {
+  background-color: #2F2FA2;
+  border: solid 1px black;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+/* responsive */
+@media(max-width: 1303px) {
+  .hireme-wrapper > div > h4 {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 1214px) {
+  .hireme-wrapper > div > h4 {
+    position: relative;
+    top: 5px;
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 1125px) {
+  .hireme-wrapper > div > h4 {
+    position: relative;
+    top: -5px;
+  }
+}
+
+@media(max-width: 989px) {
+  .hireme-wrapper {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .hireme-wrapper > div > h4 {
+    margin-left: 50px;
+    width: 100%;
+  }
+}
+
+@media(max-width: 533px) {
+  .hireme-wrapper {
+    position: relative;
+    top: -50px;
+    right: 40px;
+  }
+}
+
+
+/* end responsive */
+
+.hireme-wrapper > div > button {
+  width: 212px;
+  height: 58px;
+  background-color: #211E1F;
+  color: white;
+  font-size: 16px;
+  font-family: seguisb;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.hireme-wrapper > div > button > .hireme-text {
+  color: white;
+  text-decoration: none;
+}
+
+/* design_1 properties */
+.design_1-wrapper-header {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+
+
+.design_1-image-header {
+  width: 12%;
+  height: 260px;
+  margin-left: 84px;
+}
+
+.design_1-wrapper-bottom {
+  position: relative;
+  top: 510px;
+  width: 100%;
+  height: 230px;
+}
+
+.design_1-image-bottom {
+  width: 20%;
+  height: 230px;
+  float: right;
+}
+
+.image-bottom {
+  float: right;
+}
+
+
+/* footer properties */
+ .footer-wrapper {
+   position: relative;
+   clear: both;
+   display: grid;
+   grid-template-columns: .5fr 1fr .5fr;
+   margin-top: 395px; 
+   width: 100%;
+   height: 100px;
+   
+ }
+
+ .footer-text {
+    text-align: center;
+    width: 100%;
+    color: white;
+    opacity: .39;
+    font-weight: 100;
+    font-size: 19px;
+    
+ }
+
+ .privacy-link {
+   width: 100%;
+  
+   background-color: orange;
+ }
+
+ .cookies-link {
+   width: 100%;
+
+   background-color: yellow;
+ }
+
+ /* Main properties */
+
+ .main-wrapper {
+   position: absolute;
+   width: 100%;
+   
+   height: 510px;
+ }
+
+ /* responsiveness */
+
+ @media(max-width: 1215px) {
+  .design_1-image-header {
+    position: relative;
+    width: 115px;
+  }
+  
+ }
+
+ /* custom font */
+
+@font-face {
+  font-family: "seguisb";
+  src: url("./fonts/seguisb.ttf");
+}
+
+@font-face {
+  font-family: "seguir";
+  src: url("./fonts//seguir.ttf");
+}

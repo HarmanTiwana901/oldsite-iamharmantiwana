@@ -1,0 +1,201 @@
+#contact-wrapper {
+    position: relative;
+    top: -50px;
+    margin: auto;
+    width: 40%;
+    height: 455px;
+    z-index: 0;
+}
+
+/* back btn */
+
+.back-btn-wrapper {
+    position: absolute;
+    top: -49px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .back-btn {
+    text-align: center;
+    width: 150px;
+    height: 45px;
+    background-color: #F64C72;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: seguisb;
+    z-index: 2;
+  }
+  
+  .back-btn:hover .back-inside {
+      cursor: pointer;
+  }
+
+  .back-btn:hover {
+      cursor: pointer;
+      background-color: #2F2FA2;
+      border: white solid 1px;
+      transition-duration: .5s;
+  }
+
+  .back-btn > .back-inside {
+      color: white;
+      text-decoration: none;
+      width: 100%;
+  }
+
+#submit-email:hover {
+    background-color: #2F2FA2;
+    transition-duration: .5s;
+    border: solid 1px white;
+    cursor: pointer;
+}
+  
+
+form {
+    position: relative;
+    top: 100px;
+    display: block;
+    width: 61%;
+    margin: auto;
+    text-align: center;
+    -webkit-appearance: none;
+}
+
+#fname {
+    font-family: seguir;
+    font-size: 15px;
+    border: none;
+    border-bottom: solid 1px white;
+    background: transparent;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+
+#eaddress {
+    font-family: seguir;
+    font-size: 15px;
+    border: none;
+    border-bottom: solid .5px white;
+    background: transparent;
+    padding: 10px;
+    margin-top: 17px;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+#message {
+    font-family: seguir;
+    font-size: 15px;
+    border: none;
+    border-bottom: solid .5px white;
+    background: transparent;
+    padding: 10px;
+    margin-top: 17px;
+    resize: none;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+ 
+#submit-email {
+    margin-top: 34px;
+    width: 212px;
+    height: 58px;
+    background-color: #F64C72;
+    font-size: 16px;
+    font-family: seguisb;
+    color: white;
+    border: none;
+    float: left;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+
+#fname::placeholder, #eaddress::placeholder, #message::placeholder {
+    color: white;
+    opacity: .33;
+    position: relative;
+    right: 10px;
+}
+
+#fname[type=text], #eaddress[type=text], #message {
+    color: white;
+}
+
+#field-error {
+    color: red;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#title-wrapper {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background-color: purple
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 27px;
+    font-family: seguisb;
+    color: white;
+    float: left;
+  
+}
+
+.sub-header {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    font-family: seguir;
+    color: white;
+    top: -13px;
+    float: left;
+}
+
+.page-loadAnimation {
+    animation: fade 0.9s ease-in;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+
+/* custom font */
+
+@font-face {
+    font-family: "seguisb";
+    src: url("./fonts/seguisb.ttf");
+}
+
+@font-face {
+    font-family: "seguir";
+    src: url("./fonts//seguir.ttf");
+}
+
+/* responsiveness */
+
+@media(max-width: 787px) {
+    #contact-wrapper {
+        width: 100%;
+    }
+}

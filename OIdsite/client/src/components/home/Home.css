@@ -1,0 +1,160 @@
+#avatar-wrapper {
+    margin: auto;
+    width: 36%;
+    height: 95px;
+  
+}
+
+#home-wrapper {
+    animation: fade .9s ease-in;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+
+#about-wrapper {
+    margin: auto;
+    width: 36%;
+    height: 95px;
+    
+}
+
+#about-wrapper > h1 {
+    color: white;
+    font-size: 27px;
+    font-family: seguisb; 
+}
+
+#about-wrapper > p {
+    color: white;
+    font-size: 16px;
+    background-color: #242582;
+    padding: 20px;
+    font-family: seguir;
+}
+
+#btn-wrapper {
+    position: relative;
+    margin: auto;
+    top: 75px;
+    width: 36%;
+    height: 100px;
+    text-align: center;
+    
+}
+
+#btn-wrapper > .btn-core {
+    border: none;
+    position: relative;
+    font-size: 14px;
+    font-family: seguisb; 
+    color: white;
+    background-color: #F64c72;
+    width: 212px;
+    height: 58px;
+}
+
+#btn-wrapper > .btn-core > span {
+    position: relative;
+    top: 19px;
+}
+
+#btn-portfolio:hover {
+    background-color: #2F2FA2;
+    transition-duration: .5s;
+    border: solid .1px white;
+}
+
+#btn-contact:hover {
+    background-color: #2F2FA2;
+    transition-duration: .5s;
+    border: solid .1px white;
+}
+
+.btn-core > span:hover .btn-core {
+    background-color: #2F2FA2;
+    transition-duration: .5s;
+    border: solid 1px white; 
+}
+
+#btn-portfolio {
+     float: left;
+     text-decoration: none;
+}
+
+#btn-portfolio > span {
+    position: relative;
+    top: 16px;
+}
+
+#btn-contact {
+    float: left;
+    margin-left: 31px;
+    text-decoration: none;
+    
+}
+
+#btn-contact > span {
+    position: relative;
+    top: 16px;
+}
+
+
+/* responsive */
+
+@media(max-width: 1263px) {
+    #avatar-wrapper, #about-wrapper {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    #btn-wrapper {
+        width: 50%;
+        
+    }
+
+    #btn-wrapper > .btn-core {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        float: center;
+    }
+
+    #btn-wrapper > #btn-contact {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 442px) {
+    #btn-wrapper {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 360px) {
+    #btn-wrapper {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 308px) {
+    #btn-wrapper {
+        margin-top: 80px;
+    }
+}
+
+/* custom font */
+
+@font-face {
+    font-family: "seguisb";
+    src: url("./fonts/seguisb.ttf");
+}
+
+@font-face {
+    font-family: "seguir";
+    src: url("./fonts//seguir.ttf");
+}
